@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 
 type Question = {
   id: number;
@@ -602,7 +602,7 @@ export default function Page() {
   );
 }
 
-const styles: Record<string, React.CSSProperties> = {
+const styles: Record<string, CSSProperties> = {
   appBg: {
     minHeight: '100vh',
     background: 'linear-gradient(180deg, #0a0f1a 0%, #0b1220 100%)',
